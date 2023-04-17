@@ -1,0 +1,20 @@
+<h1>Update Exam_info</h1>
+<form action='updaterecord/{{myexam.id}}' method='post' >
+   {%csrf_token%}
+Exam Name:<br>
+<input  name="exam_name"  value='{{myexam.exam_name}}' >
+<br><br>  
+Exam Type:<br>
+<input  name="exam_type" value='{{myexam.exam_type}}' >
+<br><br> 
+Exam Time:<br>
+<input  name="exam_time" value='{{myexam.exam_time}}'>
+<br><br> 
+Exam Date :<br>
+<input  name="exam_date" value='{{myexam.exam_date}}'>
+<br><br> 
+Exam Marks:<br>
+<input  name="exam_marks" value='{{myexam.exam_marks}}'>
+<br><br>
+<input type="submit"  value="submit">
+</form>       
